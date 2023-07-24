@@ -1,10 +1,10 @@
 # Collate
 
-[![GoDoc](https://godoc.org/github.com/tidwall/collate?status.svg)](https://godoc.org/github.com/tidwall/collate)
+[![GoDoc](https://godoc.org/github.com/admpub/collate?status.svg)](https://godoc.org/github.com/admpub/collate)
 
 
 Collate is a simple collation library for comparing strings in various languages for Go. 
-It's designed for the [BuntDB](https://github.com/tidwall/buntdb) project, and 
+It's designed for the [BuntDB](https://github.com/admpub/buntdb) project, and 
 is simliar to the 
 [collation](https://msdn.microsoft.com/en-us/library/ms174596.aspx) that is 
 found in traditional database systems
@@ -16,7 +16,7 @@ a `Less(a, b string) bool` function that can be used for sorting using the
 ## Install
 
 ```
-go get -u github.com/tidwall/collate
+go get -u github.com/admpub/collate
 ```
 
 ## Example
@@ -50,7 +50,7 @@ Add `_NUM` to specifies that numbers should sort numerically ("2" < "12")
 
 ### JSON
 You can also compare fields in json documents using the `IndexJSON` function.
-The [GJSON](https://github.com/tidwall/gjson) is used under-the-hood.
+The [GJSON](https://github.com/admpub/gjson) is used under-the-hood.
 
 ```go
 var jsonA = `{"name":{"last":"Miller"}}`

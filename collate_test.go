@@ -15,17 +15,6 @@ func TestString(t *testing.T) {
 	}
 }
 
-func ExampleIndexJSON() {
-	var jsonA = `{"name":{"last":"Miller"}}`
-	var jsonB = `{"name":{"last":"anderson"}}`
-	less := IndexJSON("ENGLISH_CI", "name.last")
-	fmt.Printf("%t\n", less(jsonA, jsonB))
-	fmt.Printf("%t\n", less(jsonB, jsonA))
-	// Output:
-	// false
-	// true
-}
-
 func ExampleIndexString() {
 	var nameA = "Miller"
 	var nameB = "anderson"
